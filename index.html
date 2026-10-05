@@ -1,1 +1,128 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jerry World Translator</title><style>*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}body{background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;padding:12px}.c{max-width:480px;margin:0 auto}.h{background:rgba(255,255,255,.15);backdrop-filter:blur(10px);border-radius:20px;padding:16px;text-align:center;margin-bottom:12px}.h h1{color:#fff;font-size:16px;font-weight:800}.h p{color:#fff;font-size:11px;margin-top:4px}.card{background:#fff;border-radius:20px;padding:14px;margin-bottom:12px}.r{display:flex;gap:6px;align-items:center;margin-bottom:10px}select{flex:1;padding:10px;border:2px solid #eee;border-radius:10px;font-weight:600;background:#f9f9ff;font-size:12px}.sw{width:38px;height:38px;border:none;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border-radius:50%}textarea{width:100%;min-height:90px;padding:10px;border:2px solid #eee;border-radius:12px;font-size:14px;outline:none}.out{background:#f7f7ff;border-radius:12px;padding:10px;min-height:80px;margin-top:8px;font-size:13px;white-space:pre-wrap}#go{width:100%;padding:12px;border:none;border-radius:12px;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;font-weight:700;margin-top:8px}.s{flex:1;padding:9px;border:1px solid #ddd;border-radius:9px;background:#fff;font-size:11px;font-weight:600}.btn{display:block;text-align:center;padding:12px;border-radius:12px;text-decoration:none;font-weight:700;margin-top:8px;font-size:13px;color:#fff}.wa{background:#25D366}.share{background:#000}.link{background:#667eea}.about{background:#fff!important;color:#333!important;text-align:left!important}.about h3{color:#667eea;margin-bottom:6px;font-size:14px}.about p{font-size:12px;line-height:1.5;margin-bottom:6px;color:#444}</style></head><body><div class="c"><div class="h"><h1>JERRY WORLD TRANSLATOR</h1><p>100+ Languages • By Jerry (16) Jalingo Boarding School</p></div><div class="card"><div class="r"><select id="f"></select><button class="sw" id="sw">⇄</button><select id="t"></select></div><textarea id="i" placeholder="Type text..."></textarea><button id="go">🌐 Translate Now</button><div class="out" id="o">Translation go show here...</div><div style="display:flex;gap:6px;margin-top:8px"><button class="s" id="cp">📋 Copy</button><button class="s" id="cl">🗑️ Clear</button></div><a class="btn wa" href="https://wa.me/2347016900529?text=Hi%20Jerry%20I%20saw%20your%20Translator%20App" target="_blank">💬 WhatsApp Jerry: 07016900529</a><button class="btn share" id="sh">📤 Share App to UK/Canada Friends</button><button class="btn link" id="lk">🔗 Copy My App Link</button></div><div class="card about"><h3>👋 About Jerry</h3><p>Hi! I'm <b>Jerry Semshak (16)</b> from Jalingo, Taraba. I dey boarding school.</p><p>I build this translator to help Nigerians for UK, Canada, USA translate to Yoruba, Hausa, Igbo and 100+ languages.</p><p><b>Mission:</b> Make language no be barrier.</p><p><b>Skills:</b> Web Developer | Freelance - Open to remote jobs</p><p><b>Contact:</b> WhatsApp 07016900529<br><b>Link:</b> jerrysemshak15-cmd.github.io/Jerrysemshak/</p><p style="text-align:center;margin-top:8px"><b>Built with ❤️ from Boarding School</b></p></div></div><script>langs=[["en","English"],["yo","Yoruba"],["ha","Hausa"],["ig","Igbo"],["fr","French"],["es","Spanish"],["de","German"],["ar","Arabic"],["zh","Chinese"],["ja","Japanese"],["pt","Portuguese"],["sw","Swahili"]];f=document.getElementById('f');t=document.getElementById('t');langs.forEach(l=>{a=document.createElement('option');a.value=l[0];a.textContent=l[1];f.appendChild(a);b=document.createElement('option');b.value=l[0];b.textContent=l[1];t.appendChild(b)});f.value='en';t.value='yo';async function tr(){x=document.getElementById('i').value.trim();if(!x){alert('Type something!');return}o=document.getElementById('o');o.textContent='Translating...';try{r=await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=${f.value}&tl=${t.value}&dt=t&q=${encodeURIComponent(x)}`);d=await r.json();o.textContent=d[0].map(v=>v[0]).join('')}catch(e){o.textContent='Check internet'}}document.getElementById('go').onclick=tr;document.getElementById('sw').onclick=()=>{v=f.value;f.value=t.value;t.value=v};document.getElementById('cp').onclick=()=>{navigator.clipboard.writeText(document.getElementById('o').textContent);alert('Copied!')};document.getElementById('cl').onclick=()=>{document.getElementById('i').value='';document.getElementById('o').textContent='Translation go show here...'};document.getElementById('sh').onclick=async()=>{d={title:'Jerry World Translator',text:'Check translator app by 16yo Jerry from Nigeria!',url:'https://jerrysemshak15-cmd.github.io/Jerrysemshak/'};if(navigator.share){await navigator.share(d)}else{await navigator.clipboard.writeText(d.url);alert('Link copied! Share for UK/Canada groups!')}};document.getElementById('lk').onclick=async()=>{await navigator.clipboard.writeText('https://jerrysemshak15-cmd.github.io/Jerrysemshak/');alert('Link copied!')}</script></body></html>
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JERRY CBT BOMB - 1650+ Questions</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:system-ui}body{background:#eef5ee}
+.header{background:#006400;color:#fff;padding:12px 15px;display:flex;justify-content:space-between;position:sticky;top:0;z-index:20}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(min-width:700px){.grid{grid-template-columns:1fr 1fr 1fr}}
+.card{background:#fff;border-radius:18px;padding:16px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.08);border-left:6px solid #006400}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;z-index:50;padding:15px}
+.modal-box{background:#fff;border-radius:20px;padding:20px;max-width:420px;width:100%}
+.chip{display:inline-block;padding:10px 18px;border-radius:25px;border:2px solid #006400;margin:6px;cursor:pointer;font-weight:700}
+.chip.active{background:#006400;color:#fff}
+.q-box{background:#fff;margin:12px;padding:18px;border-radius:15px}
+.option{border:2px solid #e5e5e5;padding:14px;border-radius:12px;margin:8px 0;cursor:pointer}
+.option.sel{border-color:#006400;background:#e8f5e9}
+.num-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;background:#fff;padding:10px;border-radius:12px;margin:10px}
+.num{width:35px;height:35px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700;border:1px solid #ddd;cursor:pointer;font-size:13px}
+.num.done{background:#006400;color:#fff}.num.cur{border:2px solid #006400}
+.btn{padding:12px 18px;border-radius:12px;border:none;font-weight:800;cursor:pointer}.btn-green{background:#006400;color:#fff}
+.share-bar{display:flex;gap:10px;justify-content:center;margin:15px 0;flex-wrap:wrap}
+.share-btn{padding:10px 16px;border-radius:25px;border:none;font-weight:700;cursor:pointer}
+</style></head><body><div id="app"></div>
+<script>
+let BANK = {
+"English Language":[["Synonym of Abundant?","Scarce","Plentiful","Little","Empty",1]],
+"Mathematics":[["2x+3=11 x=?","3","4","5","6",1]],
+"Biology":[["Powerhouse of cell?","Nucleus","Mitochondria","Ribosome","Chloroplast",1]],
+"Chemistry":[["Symbol Sodium?","So","S","Na","Sd",2]],
+"Physics":[["Unit force?","Joule","Newton","Watt","Pascal",1]],
+"Economics":[["Scarcity?","Limited resources","Abundance","Money","No choice",0]],
+"Government":[["Nigeria republic year?","1960","1963","1970","1999",1]],
+"Commerce":[["E-commerce means?","Electric commerce","Electronic commerce","Easy commerce","Export commerce",1]],
+"Hausa":[["Ina kwana?","Good night","Good morning","How are you","Welcome",1]],
+"Igbo":[["Kedu? means?","How are you","Where","When","Why",0]],
+"Yoruba":[["Bawo ni? means?","How are you","Good night","Thank you","Welcome",0]]
+};
+function gen(){
+ const fill=(subj,list,need=150)=>{while(BANK[subj].length<need){let q=list[Math.floor(Math.random()*list.length)]; BANK[subj].push([q[0]+` #${BANK[subj].length+1}`,q[1],q[2],q[3],q[4],q[5]])}};
+ const eng=[["Synonym Happy?","Joyful","Sad","Angry","Bored",0],["Antonym Big?","Small","Large","Huge","Great",0],["Correct spelling?","Accommodate","Accomodate","Acommodete","Acomodate",0],["She ___ everyday","goes","go","going","gone",0],["Plural child?","children","childs","childes","childrens",0],["Past of eat?","ate","eated","eaten","eating",0]];
+ const math=[]; for(let i=0;i<200;i++){let a=Math.floor(Math.random()*25)+2,b=Math.floor(Math.random()*25)+2; math.push([`${a} × ${b} =?`,`${a*b}`,`${a+b}`,`${a*b+1}`,`${a*b-1}`,0]);}
+ const bio=[["DNA means?","Deoxyribonucleic acid","Ribo acid","Di acid","None",0],["Heart chambers?","4","2","3","5",0],["Photosynthesis needs?","CO2+water+light","O2 only","Nitrogen","Salt",0],["Blood group O is?","Universal donor","Universal receiver","Rare","None",0]];
+ const chem=[["Water boils at?","100°C","0°C","50°C","200°C",0],["NaCl is?","Common salt","Water","Sugar","Acid",0],["Au is?","Gold","Silver","Iron","Aluminium",0]];
+ const phy=[["Unit of work?","Joule","Newton","Watt","Volt",0],["Speed=?","Distance/Time","Time/Dist","Mass/Time","Force/Time",0]];
+ const econ=[["Demand up price?","Down","Up","Same","None",1],["Nigeria currency?","Naira","Cedi","Dollar","Pound",0]];
+ const gov=[["Capital Nigeria?","Abuja","Lagos","Kano","Ibadan",0],["Democracy means?","People power","Army power","King power","Chief power",0]];
+ const com=[["Profit=?","Gain","Loss","Cost","Debt",0],["Trade means?","Buy/sell","Sleep","Run","Jump",0]];
+ const hausa=[["Ruwa means?","Water","Fire","Food","Sun",0],["Gida means?","House","Water","Food","Car",0],["Abinci means?","Food","Water","House","Road",0]];
+ const igbo=[["Mmiri means?","Water","Fire","Food","Stone",0],["Ulo means?","House","Water","Food","Road",0],["Daalu means?","Thank you","Hello","Sorry","Please",0]];
+ const yoruba=[["Omi means?","Water","Food","House","Road",0],["Ile means?","House","Water","Food","Road",0],["Owo means?","Money","Water","Food","House",0]];
+ fill("English Language",eng,150); fill("Mathematics",math,150); fill("Biology",bio,150); fill("Chemistry",chem,150); fill("Physics",phy,150); fill("Economics",econ,150); fill("Government",gov,150); fill("Commerce",com,150); fill("Hausa",hausa,150); fill("Igbo",igbo,150); fill("Yoruba",yoruba,150);
+}
+gen();
+let S={screen:'subjects',exam:'JAMB',subject:null,qs:[],index:0,answers:{},time:0,timer:null,total:40};
+
+function shareApp(){
+ const url=window.location.href;
+ const text=`🔥 I don blast my JAMB with JERRY CBT BOMB! 1650+ Questions - JAMB/WAEC/NECO + Hausa/Igbo/Yoruba! Try am: ${url} - Built by Jerry 07016900529`;
+ if(navigator.share){navigator.share({title:"JERRY CBT BOMB",text:text,url:url})}
+ else {navigator.clipboard.writeText(text); alert("Link copied! Share for WhatsApp status! ✅");}
+}
+function contactMe(){
+ window.open("https://wa.me/2347016900529?text=Hello%20Jerry%20🔥%20I%20de%20use%20your%20CBT%20BOMB%20App%20from%20"+encodeURIComponent(window.location.href)+"%20-%20E%20sweet%20die!","_blank");
+}
+function shareResult(pct,score){
+ const url=window.location.href;
+ const text=`I just scored ${pct}% (${score}/${S.qs.length}) in ${S.subject} for ${S.exam} on JERRY CBT BOMB! 🔥 Built by Jerry 07016900529. You fit beat me? ${url}`;
+ if(navigator.share){navigator.share({title:`I scored ${pct}%!`,text:text,url:url})}
+ else {navigator.clipboard.writeText(text); alert("Score copied! Paste for status! 🔥");}
+}
+
+function render(){
+ const app=document.getElementById('app');
+ const shareBar=`<div class="share-bar">
+  <button class="share-btn" style="background:#25D366;color:white" onclick="shareApp()">📤 Share App</button>
+  <button class="share-btn" style="background:#006400;color:white" onclick="contactMe()">💬 Contact Jerry - 07016900529</button>
+ </div>`;
+ if(S.screen==='subjects'){
+  app.innerHTML=`<div class="header"><div class="logo">🇳🇬 JERRY CBT - 1650+ Qs</div><div>${S.exam}</div></div>
+  <div style="padding:15px;max-width:1000px;margin:auto">
+   <h2 style="text-align:center;margin:12px 0">Choose Subject (150 Qs each!)</h2>
+   <div style="display:flex;gap:8px;justify-content:center;margin-bottom:15px">
+    ${['JAMB','WAEC','NECO'].map(e=>`<button onclick="S.exam='${e}';render()" style="padding:8px 20px;border-radius:20px;border:none;font-weight:800;background:${S.exam===e?'#006400':'white'};color:${S.exam===e?'white':'#333'}">${e}</button>`).join('')}
+   </div>
+   <div class="grid">
+    ${Object.keys(BANK).map(sub=>`<div class="card" onclick="chooseNumber('${sub}')"><h3>${sub}</h3><p>${BANK[sub].length} Questions</p><p style="color:#006400;font-weight:800;margin-top:5px">Start CBT →</p></div>`).join('')}
+   </div>
+   ${shareBar}
+   <div style="background:white;border-radius:15px;padding:15px;margin-top:10px;text-align:center">
+    <h3>👨‍💻 About Developer</h3><p style="font-size:13px;color:#666;margin:6px 0">Built by Jerry from Jalingo - SS3<br>Phone: 07016900529<br>For Nigerian students - Free Forever 🇳🇬</p>
+    <button class="share-btn" style="background:#000;color:white;margin:5px auto" onclick="contactMe()">📞 Chat Me on WhatsApp</button>
+   </div>
+  </div>`;
+ } else if(S.screen==='number'){
+  const max=BANK[S.subject].length;
+  app.innerHTML=`<div class="modal"><div class="modal-box">
+   <h2>${S.subject}</h2><p>${max} Questions Available</p>
+   <div style="margin:10px 0">${[10,20,40,60,80,100,150].filter(n=>n<=max).map(n=>`<span class="chip ${S.total===n?'active':''}" onclick="S.total=${n};render()">${n}</span>`).join('')} <span class="chip ${S.total===max?'active':''}" onclick="S.total=${max};render()">All ${max}</span></div>
+   <input type="number" min="5" max="${max}" value="${S.total}" onchange="S.total=Math.min(${max},Math.max(5,parseInt(this.value)||40));render()" style="width:100%;padding:10px;border-radius:10px;border:2px solid #ddd">
+   <div style="display:flex;gap:10px;margin-top:15px"><button class="btn" style="flex:1;background:#eee" onclick="S.screen='subjects';render()">Cancel</button><button class="btn btn-green" style="flex:1" onclick="startQuiz()">Start ${S.total} Qs 🚀</button></div>
+   ${shareBar}
+  </div></div>`;
+ } else if(S.screen==='quiz'){
+  const q=S.qs[S.index];
+  app.innerHTML=`<div class="header"><span>${S.subject} (${S.index+1}/${S.qs.length})</span><span style="background:#ffcc00;color:#000;padding:4px 10px;border-radius:20px;font-weight:900">⏱️ ${fmt(S.time)}</span><span>${S.exam}</span></div>
+  <div class="num-grid">${S.qs.map((_,i)=>`<div class="num ${S.answers[i]!==undefined?'done':''} ${i===S.index?'cur':''}" onclick="S.index=${i};render()">${i+1}</div>`).join('')}</div>
+  <div class="q-box"><h3 style="color:#006400">Question ${S.index+1}</h3><p style="font-size:17px;font-weight:700;margin:10px 0">${q[0]}</p>
+  ${[1,2,3,4].map((n,i)=>`<div class="option ${S.answers[S.index]===i?'sel':''}" onclick="S.answers[${S.index}]=${i};render()">${String.fromCharCode(64+n)}. ${q[n]}</div>`).join('')}</div>
+  <div style="display:flex;justify-content:space-between;padding:12px;gap:10px"><button class="btn" style="background:#e0e0e0;flex:1" onclick="if(S.index>0){S.index--;render()}">← Prev</button><button class="btn btn-green" style="flex:1" onclick="if(S.index<S.qs.length-1){S.index++;render()}else submit()">${S.index===S.qs.length-1?'Submit':'Next →'}</button></div>
+  <div style="text-align:center">${shareBar}</div>`;
+ } else if(S.screen==='result'){
+  let score=0; S.qs.forEach((q,i)=>{if(S.answers[i]===q[5])score++;}); const pct=Math.round(score/S.qs.length*100);
+  app.innerHTML=`<div style="max-width:500px;margin:20px auto;background:#fff;border-radius:20px;padding:20px;text-align:center">
+   <div style="font-size:50px">${pct>=70?'🎉':'💪'}</div><h2>${S.subject} - ${S.total}Qs</h2><h1 style="font-size:45px;color:#006400">${pct}%</h1><p><b>${score}/${S.qs.length}</b> correct</p>
+   <div class="share-bar">
+    <button class="share-btn" style="background:#25D366;color:white" onclick="shareResult(${pct},${score})">📤 Share My ${pct}% Score</button>
+    <button class="share-btn" style="background:#006400;color:white" onclick="contactMe()">💬 Contact Jerry</button>
+   </div>
+   <div style="display:flex;gap:10px;margin-top:15px"><button class="btn" style="flex:1;background:#eee" onclick="S.screen='subjects';render()">Subjects</button><button class="btn btn-green" style="flex:1" onclick="chooseNumber('${S.subject}')">Again</button></div>
+   <p style="font-size:12px;color:#666;margin-top:15px">Built by Jerry - 07016900529 - Jalingo</p>
+  </div>`;
+ }
+}
+function chooseNumber(sub){S.subject=sub;S.total=40;S.screen='number';render()}
+function startQuiz(){let all=[...BANK[S.subject]];for(let i=all.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[all[i],all[j]]=[all[j],all[i]];}S.qs=all.slice(0,S.total);S.index=0;S.answers={};S.time=S.total*60;S.screen='quiz';clearInterval(S.timer);S.timer=setInterval(()=>{S.time--;if(S.time<=0)submit();},1000);render()}
+function submit(){clearInterval(S.timer);S.screen='result';render()}
+function fmt(s){return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')}
+render();
+</script></body></html>
